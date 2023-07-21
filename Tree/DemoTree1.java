@@ -2,7 +2,7 @@ package Tree;
 
 import java.util.*;
 
-public class DemoTree {
+public class DemoTree1 {
     public static void main(String[] args) {
         // right
         TreeNode n22 = new TreeNode(7, null, null);
