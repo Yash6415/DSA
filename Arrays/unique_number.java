@@ -17,7 +17,6 @@ public class unique_number {
         }
         if(count<=1 && k==value){
             System.out.println("Unique");
-            return;
         }else if (k != value){
             System.out.println("Not Found");
         }else {
