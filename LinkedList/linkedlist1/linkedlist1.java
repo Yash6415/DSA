@@ -8,7 +8,7 @@ public class linkedlist1 {
         list.insert(20);
         list.insert(30);
         list.update(20,200);
-        list.delete(200);
+        list.delete(30);
         list.print();
     }
 }

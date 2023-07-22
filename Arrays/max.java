@@ -1,8 +1,8 @@
 package Arrays;
-
+//second max.
 public class max {
     public static void main(String[] arg) {
-        int arr[] = {2,5,3,9,20,10,1};
+        int arr[] = {10, 2, 3, 9, 20, 5, 1};
         int mx1 = arr[1];
         int mx2 = arr[0];
         int n = arr.length;
@@ -24,16 +24,14 @@ public class max {
             }
         }
         System.out.println(mx2);
-    }
-       /* int arr[] = {1, 3, 5, 6, 8, 9, 10, 11, 17};
-        int max = arr[0];
-        int n = 9;
 
-        for (int i = 1; i <= n - 1; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-            }
-        }
-        System.out.println(max);
-    }*/
+
+//        int max = 0;
+//        for (int i = 0; i < n; i++) {
+//            if (max < arr[i]) {
+//                max = arr[i];
+//            }
+//        }
+//        System.out.println(max);
+    }
 }

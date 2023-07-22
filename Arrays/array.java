@@ -7,9 +7,7 @@ public class array {
         int n = arr.length;
 
         for(int i=0; i<n; i++){
-            if(arr[i] < count){
-                arr[i] = 0;
-            }else {
+            if(arr[i] == 0){
                 arr[i] = 1;
             }
         }

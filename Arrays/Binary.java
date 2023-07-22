@@ -8,6 +8,7 @@ public class Binary {
         int value = 10;
         int left = 0;
         int right = arr.length - 1;
+
         while (left <= right){
             int mid = (left + right)/2;
             if(value > arr[mid]) {

@@ -8,7 +8,7 @@ public class marge_array {
         int[] ans = new int[arr.length*2];
         int k = arr.length;
 
-        for(int i=0; i<arr.length; i++){
+        for(int i=0; i<k; i++){
             ans[i] = arr[i];
             ans[k+i] = arr[i];
         }

@@ -12,8 +12,8 @@ public class Palindrome {
             int temp = arr[i];
             while (temp > 0){
                 int r = temp%10;
-                temp/=10;
                 ans = (ans*10)+r;
+                temp/=10;
             }
             if(ans != arr[i]){
                 System.out.println("false");

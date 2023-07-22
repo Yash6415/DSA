@@ -6,7 +6,7 @@ public class unique_number {
     public static void main(String[] args) {
         int[] arr = {12, 2, 3, 3, 9, 9, 2};
         int n = arr.length;
-        int value = 1;
+        int value = 2;
         int count = 0;
         int k = 0;
         for(int i=0; i<n; i++){

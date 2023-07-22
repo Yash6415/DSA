@@ -1,5 +1,4 @@
 package Arrays;
-
 //31-01-2023
 //Count pairs with given sum
 public class Count_Pairs {

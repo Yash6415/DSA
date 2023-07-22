@@ -1,7 +1,4 @@
 package Arrays;
-
-import java.sql.SQLOutput;
-
 //25-01-2023
 //Count even-odd in array
 public class count_even_odd {
