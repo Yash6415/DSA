@@ -16,22 +16,12 @@ public class max {
         }
         for(int i=2; i<=n-1; i++){
             if(mx1 < arr[i]){
-                int temp = mx1;
+                mx2 = mx1;
                 mx1 = arr[i];
-                mx2 = temp;
             } else if (mx2 < arr[i]) {
                 mx2 = arr[i];
             }
         }
         System.out.println(mx2);
-
-
-//        int max = 0;
-//        for (int i = 0; i < n; i++) {
-//            if (max < arr[i]) {
-//                max = arr[i];
-//            }
-//        }
-//        System.out.println(max);
     }
 }

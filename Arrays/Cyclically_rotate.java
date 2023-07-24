@@ -1,12 +1,10 @@
 package Arrays;
-
 //31-01-2023
 //Cyclically rotate an array by one
 public class Cyclically_rotate {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5};
         int n = arr.length;
-
         int i = 0;
         int j = arr.length - 1;
 

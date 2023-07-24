@@ -1,37 +1,40 @@
 package Stack_Queue;
-
 import java.util.*;
 
 public class free {
     public static void main(String[] args) {
-     String s = "3[a]2[bc]";
-        Stack<Integer> stack = new Stack<>();
-        Stack<String> stack1 = new Stack<>();
-        String s1 = "";
+        int[] arr = {73,74,75,71,69,72,76,73};
+        int[] ans = new int[arr.length];
 
-        for(int i=0; i<s.length(); i++){
-            if(Character.isDigit(s.charAt(i))){
-                int count = 0;
-                while (Character.isDigit(s.charAt(i))){
-                    count = count * 10 + s.charAt(i) - '0';
-                    i++;
+        for (int i = 0; i < arr.length; i++) {
+            int count = 0;
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    ans[i] = ++count;
+                    break;
+                } else{
+                    count++;
                 }
-                i += -1;
-                stack.push(count);
-            } else if (s.charAt(i) == '[') {
-                stack1.push(s1);
-                s1 = "";
-            }else if(s.charAt(i) == ']'){
-                StringBuilder sb = new StringBuilder(stack1.pop());
-                int n = stack.pop();
-                while (n-- > 0){
-                    sb.append(s1);
-                }
-                s1 = sb.toString();
-            }else{
-                s1 += s.charAt(i);
+                ans[i] = count;
             }
         }
-        System.out.println(s1);
+        System.out.println(Arrays.toString(ans));
+
+//        Stack<Integer> stack1 = new Stack<>();
+//        Stack<Integer> stack2 = new Stack<>();
+//        int[] ans = new int[arr.length];
+//
+//        for(int i=arr.length-1; i>=0; i--){
+//            stack1.push(arr[i]);
+//        }
+//        for(int i=0; i<stack1.size(); i++){
+//            int k = stack1.pop();
+//            int count = 0;
+//            while (k < stack1.peek()){
+//                if(k < stack1.peek()){
+//                    stack2.push(stack1.pop());
+//                }
+//            }
+//        }
     }
 }

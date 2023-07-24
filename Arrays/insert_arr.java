@@ -3,78 +3,67 @@ package Arrays;
 public class insert_arr{
     public static void main(String[] args) {
         int[] arr=new int[5];
-        int l= 0;
-        int v1=10;
-        int v2=20;
-        l=insert(arr,10,l);
-        l=insert(arr,20,l);
-        l=insert(arr,30,l);
-        l=insert(arr,40,l);
-        l=insert(arr,50,l);
+        int i= 0;
+
+        i = insert(arr,10,i);
+        i = insert(arr,20,i);
+        i = insert(arr,30,i);
+        i = insert(arr,40,i);
+        i = insert(arr,50,i);
         // l=insert(arr,50,l);
-        update(arr,10,50,l);
-        search(arr,30,l);
-        for (int i=0;i< arr.length;i++)
-        {
-            System.out.print(arr[i]+" ");
+
+        update(arr,10,50,i);
+        search(arr,30,i);
+
+        for (int k=0; k< arr.length; k++) {
+            System.out.print(arr[k] + " ");
         }
         System.out.println();
-        delete(arr,20,l);
 
-        for (int i=0;i< arr.length-1;i++)
-        {
-            System.out.print(arr[i]+" ");
+        delete(arr,20,i);
+        for (int k=0; k< arr.length-1; k++) {
+            System.out.print(arr[k] + " ");
         }
 
     }
-    public static int insert(int[] arr,int v,int l){
-        if(l== arr.length)
-        {
+    public static int insert(int[] arr,int j,int i){
+        if(i == arr.length) {
             System.out.println("Array is Full!!");
             return 0;
         }
-        arr[l]=v;
-        l++;
-        return l;
+        arr[i] = j;
+        i++;
+        return i;
 
     }
-    public static void update(int[] arr,int v1,int v2,int l)
+    public static void update(int[] arr,int n1,int n2,int j)
     {
-        for (int i=0;i<l;i++)
-        {
-            if (arr[i]==v1)
-            {
-                arr[i]=v2;
-
+        for (int i=0; i<j; i++) {
+            if (arr[i] == n1) {
+                arr[i] = n2;
             }
         }
     }
-    public static void search(int[] arr,int v1,int l)
+    public static void search(int[] arr,int n1,int j)
     {
-        for (int i=0;i<l;i++)
-        {
-            if (arr[i]==v1)
-            {
-                System.out.println(v1+" Is present");
+        for (int i=0; i<j; i++) {
+            if (arr[i] == n1) {
+                System.out.println(n1+" Is present");
                 return;
             }
         }
-        System.out.println(v1+" Is not present");
-        return;
+        System.out.println(n1 + " Is not present");
     }
-    public static int delete(int[] arr,int v1,int l)
+    public static int delete(int[] arr,int n1,int n)
     {
-        for (int i=0;i<l;i++)
-        {
-            if (arr[i]==v1)
-            {
-                l--;
-                for(int j=i;j<l;j++)
-                {
-                    arr[j]=arr[j+1];
+        for (int i=0; i<n; i++) {
+            if (arr[i] == n1) {
+                n--;
+                for(int j=i; j<j; j++) {
+                    arr[j] = arr[j+1];
                 }
             }
         }
-        return l;
+        return n;
     }
 }

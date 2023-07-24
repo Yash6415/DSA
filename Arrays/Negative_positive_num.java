@@ -4,7 +4,7 @@ package Arrays;
 //Negative-positive-number
 public class Negative_positive_num {
     public static void main(String[] args) {
-        int[] arr = {-8 ,9, 5 ,10 ,2, 6, -7 ,7};
+        int[] arr = {8 ,9, -5 ,10 ,2, 6, -7 ,7};
         int n = arr.length;
         int j=0;
         for(int i=0; i<n; i++){

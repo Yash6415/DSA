@@ -17,6 +17,7 @@ public class Palindrome {
             }
             if(ans != arr[i]){
                 System.out.println("false");
+                return;
             }
         }
         System.out.println("true");
