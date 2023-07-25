@@ -59,7 +59,7 @@ public class insert_arr{
         for (int i=0; i<n; i++) {
             if (arr[i] == n1) {
                 n--;
-                for(int j=i; j<j; j++) {
+                for(int j=i; j<n; j++) {
                     arr[j] = arr[j+1];
                 }
             }

@@ -7,7 +7,7 @@ public class find_3_Largest_Number {
         int mx2 = Integer.MIN_VALUE;
         int mx3 = Integer.MIN_VALUE;
 
-        for(int i=1; i< arr.length; i++){
+        for(int i=1; i<arr.length; i++){
             if(arr[i] > mx1){
                 mx3 = mx2;
                 mx2 = mx1;

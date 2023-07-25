@@ -1,7 +1,4 @@
 package Arrays;
-
-import java.lang.reflect.Array;
-
 public class Binary {
     public static void main(String[] arg){
         int arr[] = {2,4,6,7,9,10,15};
