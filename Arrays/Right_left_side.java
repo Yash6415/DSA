@@ -8,7 +8,6 @@ public class Right_left_side {
         int n = arr.length;
         int count = 0;
 
-        int temp;
         int i=0;
         int j= arr.length-1;
 
@@ -18,7 +17,7 @@ public class Right_left_side {
             } else if (arr[j] == 1) {
                 j--;
             } else {
-                temp = arr[i];
+                int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
