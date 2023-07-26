@@ -8,7 +8,7 @@ public class leetCode24 {
         list.insert(2);
         list.insert(3);
         list.insert(4);
-        list.swapPairs(list.head);
+        list.swapPairs();
         list.print();
     }
 }
@@ -32,7 +32,7 @@ class LinkedList{
         }
     }
 
-    public void swapPairs(Node head) {
+    public void swapPairs() {
         Node fast = head.next;
         Node slow = head;
 

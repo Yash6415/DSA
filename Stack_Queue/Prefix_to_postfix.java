@@ -8,10 +8,14 @@ public class Prefix_to_postfix {
 
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '/' || s.charAt(i) == '*'){
-
+                String left = stack.pop();
+                String right = stack.pop();
+                String ans = left + right + s.charAt(i);
+                stack.push(ans);
             }else {
-
+                stack.push(String.valueOf(s.charAt(i)));
             }
         }
+        System.out.println(stack);
     }
 }
