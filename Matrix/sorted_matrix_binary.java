@@ -13,7 +13,7 @@ public class sorted_matrix_binary {
         int c = matrix[0].length;
         int top=0;
         int bottom=c-1;
-        int value = 10;
+        int value = 8;
         int[] ans = new int[r * c];
         int index = 0;
         for (int i = 0; i < r; i++) {
