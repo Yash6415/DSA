@@ -11,7 +11,7 @@ public class max_find_sum_columns {
                 {1, 2, 3}
         };
         int row = matrix.length;
-        System.out.println(row);
+//        System.out.println(row);
         int col = matrix[0].length;
 
         int max = Integer.MIN_VALUE;
@@ -20,7 +20,7 @@ public class max_find_sum_columns {
             for (int j = 0; j < row; j++) {
                 sum = sum + matrix[j][i];
 
-                System.out.println(i + " " + sum);
+//                System.out.println(i + " " + sum);
                 if (sum > max) {
                     max = sum;
                 }
