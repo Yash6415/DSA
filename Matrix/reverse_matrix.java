@@ -13,24 +13,31 @@ public class reverse_matrix {
         int c = matrix[0].length;
         int temp=0;
 
-        for(int i=0; i<r; i++){
-            int s = 0;
-            int e = c-1;
-            while (s < e){
-                temp = matrix[i][s];
-                matrix[i][s] = matrix[i][e];
-                matrix[i][e] = temp;
-                s++;
-                e--;
-            }
-        }
+//        for(int i=0; i<r; i++){
+//            int s = 0;
+//            int e = c-1;
+//            while (s < e){
+//                temp = matrix[i][s];
+//                matrix[i][s] = matrix[i][e];
+//                matrix[i][e] = temp;
+//                s++;
+//                e--;
+//            }
+//        }
 
-        for(int i=0; i<r; i++){
-            for(int j=0; j<c; j++) {
-                System.out.print(matrix[i][j] + " ");;
+        for(int i=r-1; i>=0; i--){
+            for(int j=c-1; j>=0; j--){
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
+//
+//        for(int i=0; i<r; i++){
+//            for(int j=0; j<c; j++) {
+//                System.out.print(matrix[i][j] + " ");;
+//            }
+//            System.out.println();
+//        }
 
     }
 }
