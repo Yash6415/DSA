@@ -32,10 +32,9 @@ public class frequency {
 //            int ascii = (int) s.charAt(i);
 //            arr[ascii] = arr[ascii] + 1;
 //        }
-//        for (int i = 0; i < arr.length; i++) {
+//        for (char i = 0; i < arr.length; i++) {
 //            if (arr[i] > 0) {
-//                char c = (char) i;
-//                System.out.println(c + "-" + arr[i]);
+//                System.out.println(i + "-" + arr[i]);
 //            }
 //        }
 //    }

@@ -21,13 +21,13 @@ public class Words_Palindrome {
     private static void Pelindrome(char[] arr, int l, int r) {
         while (l < r) {
             if (arr[l] != arr[r]) {
-                System.out.println("Not a pelindrome");
+                System.out.println("Not a Palindrome");
                 return;
             } else {
                 l++;
                 r--;
             }
-            System.out.println("Pelindrome");
         }
+        System.out.println("Palindrome");
     }
 }
