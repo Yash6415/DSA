@@ -11,12 +11,22 @@ public class equal_digits_chars{
         int chars=0;
         int i=0;
 
+//        while (i<s.length()){
+//            if(s1[i] >= 65 && s1[i] <= 128){
+//                chars++;
+//                i++;
+//            } else {
+//                num++;
+//                i++;
+//            }
+//        }
+
         while (i<s.length()){
-            if(s1[i] >= 65 && s1[i] <= 128){
-                chars++;
-                i++;
-            } else {
+            if(s1[i] >= '0' && s1[i] <= '9'){
                 num++;
+                i++;
+            }else {
+                chars++;
                 i++;
             }
         }
