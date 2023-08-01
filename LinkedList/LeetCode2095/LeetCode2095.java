@@ -1,7 +1,7 @@
 //28-03-2023
 //2095. Delete the Middle Node of a Linked List.
 package LinkedList.LeetCode2095;
-public class linkedlist2095 {
+public class LeetCode2095 {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.insert(1);
