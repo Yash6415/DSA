@@ -35,6 +35,5 @@ public class LeetCode59 {
             }
             System.out.println();
         }
-        System.out.println();
     }
 }
