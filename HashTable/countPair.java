@@ -6,7 +6,7 @@ import java.util.*;
 //5. Count pairs with given sum.
 public class countPair {
     public static void main(String[] args) {
-        int[] arr = {1,5,5,5,5,7};
+        int[] arr = {1,5,5,5,5,7,9};
         int sum = 10;
         int count = 0;
 

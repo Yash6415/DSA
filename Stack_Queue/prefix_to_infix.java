@@ -1,6 +1,7 @@
 package Stack_Queue;
 import java.util.*;
-
+//02-08-2023
+//Prefix to Infix Conversion.
 public class prefix_to_infix {
     public static void main(String[] args) {
         String s = "*+-abcd";

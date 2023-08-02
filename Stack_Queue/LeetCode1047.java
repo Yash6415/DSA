@@ -1,12 +1,10 @@
 package Stack_Queue;
-
 import java.util.*;
 //04-06-2023
 //1047.Remove All Adjacent Duplicates In String.
 public class LeetCode1047 {
     public static void main(String[] args) {
         String s = "abbaca";
-
         Stack<Character> stack = new Stack<>();
 
         for (int i=0; i<s.length(); i++){
