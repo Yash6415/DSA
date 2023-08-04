@@ -1,5 +1,4 @@
-package LeetCode;
-
+package BinarySearch;
 //12-06-2023
 //1802.Maximum Value at a Given Index in a Bounded Array.
 public class LeetCode1802 {

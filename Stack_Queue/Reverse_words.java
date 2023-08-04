@@ -1,6 +1,5 @@
 package Stack_Queue;
-
-import java.util.Stack;
+import java.util.*;
 //02-08-2023
 //Reverse individual words using stack.
 public class Reverse_words {

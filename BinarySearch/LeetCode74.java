@@ -1,5 +1,4 @@
-package LeetCode;
-
+package BinarySearch;
 //07-07-2023
 //74.Search a 2D Matrix.
 public class LeetCode74 {

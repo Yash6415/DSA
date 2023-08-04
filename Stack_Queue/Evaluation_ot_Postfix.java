@@ -13,17 +13,17 @@ public class Evaluation_ot_Postfix {
                 String right = stack.pop();
                 int one = Integer.parseInt(left);
                 int two = Integer.parseInt(right);
-                int fun = 0;
+                int ans = 0;
                 if (s.charAt(i)=='+'){
-                    fun  = two + one;
+                    ans  = two + one;
                 } else if (s.charAt(i)=='-') {
-                    fun = two - one;
+                    ans = two - one;
                 }else if (s.charAt(i)=='*'){
-                    fun = two * one;
+                    ans = two * one;
                 }else {
-                    fun = two / one;
+                    ans = two / one;
                 }
-                stack.push(String.valueOf(fun));
+                stack.push(String.valueOf(ans));
             }else {
                 stack.push(String.valueOf(s.charAt(i)));
             }

@@ -1,5 +1,4 @@
 package Stack_Queue;
-
 import java.util.*;
 public class stack {
     public static void main(String[] args) {
@@ -9,7 +8,7 @@ public class stack {
         push(10,s1,s2);
         push(20,s1,s2);
         print(s1);
-        s1.pop();
+        pop(s1);
         print(s1);
         push(25,s1,s2);
         push(30,s1,s2);
@@ -19,6 +18,8 @@ public class stack {
     private static void print(Stack<Integer> s1) {
         System.out.println(s1);
     }
+
+    private static int pop(Stack<Integer> stack1){return stack1.pop();}
 
     private static int push(int i, Stack<Integer> s1,Stack<Integer> s2) {
         while (!s1.isEmpty()){

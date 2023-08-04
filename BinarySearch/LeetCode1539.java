@@ -1,5 +1,4 @@
-package LeetCode;
-
+package BinarySearch;
 //06-03-2023
 //1539. Kth Missing Positive Number.
 public class LeetCode1539 {

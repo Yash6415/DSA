@@ -1,5 +1,4 @@
-package LeetCode;
-
+package BinarySearch;
 //06-07-2023
 //153.Find Minimum in Rotated Sorted Array.
 public class LeetCode153 {

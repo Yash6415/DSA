@@ -1,5 +1,4 @@
-package LeetCode;
-
+package BinarySearch;
 //13-06-2023
 //704.Binary Search.
 public class LeetCode704 {
