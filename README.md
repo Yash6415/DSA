@@ -29,6 +29,7 @@ The `data-structures` folder contains implementations of various data structures
 Here are some of the data structures you can find in this repository:
 - Array
 - String
+- Binary Search
 - Linked List (Singly, Doubly, Circular)
 - Stack
 - Queue (Array-based, Linked List-based)
