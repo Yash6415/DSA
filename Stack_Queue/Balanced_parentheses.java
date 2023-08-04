@@ -5,7 +5,7 @@ import java.util.Stack;
 //Check for Balanced parentheses in an expression.
 public class Balanced_parentheses {
     public static void main(String[] args) {
-        String s = "()";
+        String s = "({[}])";
         Stack<Character> stack = new Stack<>();
 
         for(int i=0; i<s.length(); i++){
