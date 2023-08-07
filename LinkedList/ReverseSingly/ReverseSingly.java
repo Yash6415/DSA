@@ -8,8 +8,8 @@ public class ReverseSingly {
         list.insert(30);
         list.insert(40);
         list.insert(50);
-        list.revers(list.head);
-        list.print();
+        list.revers();
+        list.print(list.head);
     }
 }
 class LinkedList {
@@ -25,16 +25,19 @@ class LinkedList {
             tail = node;
         }
     }
-    public void revers(Node head){
+    public void revers(){
         Node temp = head;
         Node prev = null;
-        Node curr = null;
 
-        while (temp != null){
-
+        while (temp != null) {
+            Node curr = temp;
+            temp = temp.next;
+            curr.next = prev;
+            prev = curr;
         }
+        head = prev;
     }
-    public void print(){
+    public void print(Node head){
         Node temp = head;
         while (temp != null){
             System.out.print(temp.data + " ");

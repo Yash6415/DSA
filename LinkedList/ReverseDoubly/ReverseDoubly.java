@@ -9,6 +9,7 @@ public class ReverseDoubly {
         list.insert(4);
         list.insert(5);
         list.printReverse(list.head);
+        list.print();
     }
 }
 class LinkedList {
@@ -44,11 +45,19 @@ class LinkedList {
             curr = temp;
             temp = temp.prev;
         }
-        Node newHead = curr;
-
-        while (newHead != null) {
-            System.out.print(newHead.data + " ");
-            newHead = newHead.next;
+        head = curr;
+        tail = head;
+//
+//        while (newHead != null) {
+//            System.out.print(newHead.data + " ");
+//            newHead = newHead.next;
+//        }
+    }
+    public void print(){
+        Node temp = head;
+        while (temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
         }
     }
 

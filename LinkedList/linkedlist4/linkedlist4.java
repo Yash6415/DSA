@@ -42,17 +42,17 @@ class LinkedList{
 
     public void deleteNode(Node p) {
         Node temp = p;
-//        temp.data = temp.next.data;
-//        temp.next = temp.next.next;
+        temp.data = temp.next.data;
+        temp.next = temp.next.next;
 
-        while (temp.next != null){
-            temp.data = temp.next.data;
-            if (temp.next.next == null){
-                temp.next = null;
-                return;
-            }
-            temp = temp.next;
-        }
+//        while (temp.next != null){
+//            temp.data = temp.next.data;
+//            if (temp.next.next == null){
+//                temp.next = null;
+//                return;
+//            }
+//            temp = temp.next;
+//        }
     }
 }
 class Node{

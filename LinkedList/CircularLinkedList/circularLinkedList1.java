@@ -50,7 +50,7 @@ class LinkedList{
                 break;
             }
         }
-        int count = 0;
+        int count = 1;
         if(check){
             slow = slow.next;
             while (slow != head){
