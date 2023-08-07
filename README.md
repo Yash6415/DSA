@@ -55,4 +55,4 @@ Happy coding and enjoy your journey of learning data structures and algorithms w
 
 You can find the repository owner [@yashsojitra65](https://github.com/yashsojitra65) on GitHub.
 
-*Contact Email:* yashsojitra065@email.com
+*Contact Email:* yashsojitra065@gmail.com
