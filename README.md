@@ -29,6 +29,7 @@ The `data-structures` folder contains implementations of various data structures
 Here are some of the data structures you can find in this repository:
 - Array
 - String
+- Binary Search
 - Linked List (Singly, Doubly, Circular)
 - Stack
 - Queue (Array-based, Linked List-based)
@@ -54,4 +55,4 @@ Happy coding and enjoy your journey of learning data structures and algorithms w
 
 You can find the repository owner [@yashsojitra65](https://github.com/yashsojitra65) on GitHub.
 
-*Contact Email:* yashsojitra065@email.com
+*Contact Email:* yashsojitra065@gmail.com
