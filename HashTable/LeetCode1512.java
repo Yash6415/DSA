@@ -12,7 +12,9 @@ public class LeetCode1512 {
             if (map.containsKey(i)){
                 map.put(i,map.get(i)+1);
             }
-            else map.put(i,1);
+            else{
+                map.put(i,1);
+            }
         }
         System.out.println(map);
         int count = 0;
