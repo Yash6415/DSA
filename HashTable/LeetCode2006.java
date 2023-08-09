@@ -1,14 +1,11 @@
 package HashTable;
-
 import java.util.*;
-
 //04-05-2023
-//2006. Count Number of Pairs With Absolute Difference K
+//2006.Count Number of Pairs With Absolute Difference K
 public class LeetCode2006 {
     public static void main(String[] args) {
-        int arr[] = {1,2,2,1};
-        int n = arr.length;
-        int k = 1;
+        int arr[] = {3,2,1,5,4};
+        int k = 2;
         Map<Integer,Integer> map = new HashMap<>();
 
         for(int i : arr){

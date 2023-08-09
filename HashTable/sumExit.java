@@ -1,8 +1,7 @@
 package HashTable;
-
-import java.util.HashSet;
+import java.util.*;
 //01-05-2023
-//2. Check if pair with given Sum exists in Array.
+//2.Check if pair with given Sum exists in Array.
 public class sumExit {
     public static void main(String[] args) {
         int[] arr = {1, 6, 4, -1, 5};

@@ -1,8 +1,5 @@
 package HashTable;
-
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.*;
 //02-05-2023
 //6. Count frequency of each number in array
 public class frequent {

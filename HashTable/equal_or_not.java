@@ -1,9 +1,7 @@
 package HashTable;
-
-import java.util.HashMap;
-
+import java.util.*;
 //02-05-2023
-//4. Check if two arrays are equal or not.
+//4.Check if two arrays are equal or not.
 public class equal_or_not {
     public static void main(String[] args) {
         int[] arr1 = {1,2,5,4,0,0};
@@ -30,10 +28,8 @@ public class equal_or_not {
                 return;
             }
             count = map.get(i);
-            map.put(i,count--);
+            map.put(i,count-1);
         }
-
-
 
 //        for(int i=0; i<arr1.length; i++){
 //            if(map.get(arr1[i]) == null){
