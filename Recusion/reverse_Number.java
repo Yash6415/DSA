@@ -1,5 +1,4 @@
 package Recusion;
-
 //08-05-2023
 //7. reverse an integer number using recursion.
 public class reverse_Number {
@@ -11,7 +10,7 @@ public class reverse_Number {
         if(n == 0){
             return;
         }
-        System.out.print(n % 10 + " ");
+        System.out.print(n % 10);
         revers(n / 10);
     }
 }

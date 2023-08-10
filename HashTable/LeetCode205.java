@@ -1,12 +1,11 @@
 package HashTable;
-
 import java.util.*;
 //30-05-2023
 //205.Isomorphic Strings.
 public class LeetCode205 {
     public static void main(String[] args) {
-        String s = "paper";
-        String t = "title";
+        String s = "egg";
+        String t = "add";
         HashMap<Character,Character> map = new HashMap<>();
 
         for(int i=0; i<s.length(); i++){
