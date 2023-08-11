@@ -10,6 +10,6 @@ public class Product {
         if(y == 0){
             return 0;
         }
-          return x += product(x,y-1);
+        return x += product(x,y-1);
     }
 }
