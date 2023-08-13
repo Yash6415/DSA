@@ -25,7 +25,7 @@ class Account{
         this.withdraw = withdraw;
         this.deposit = deposit;
     }
-    public void withdraw( int withdraw){
+    public void withdraw(int withdraw){
         accountBalance -= withdraw;
     }
     public void deposit(int deposit){

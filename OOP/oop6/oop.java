@@ -6,7 +6,7 @@ public class oop {
         student s1 = new student(101,"Yash",90,80,70,60,50);
         student s2 = new student(102,"Yogi",80,46,89,90,99);
         student s3 = new student(103,"Jay",79,63,48,96,98);
-        student s4 = new student(104,"Tilak",86,89,56,76,63);
+        student s4 = new student(104,"CK",86,89,56,76,63);
         student s5 = new student(105,"ABC",79,62,30,46,89);
 
         int arr[] = new int[5];

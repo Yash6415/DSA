@@ -1,4 +1,5 @@
 package OOP;
+import java.util.*;
 
 public class OOP2 {
     public static void main(String[] args) {
@@ -9,7 +10,8 @@ public class OOP2 {
         m[3] = new Movie("Naadi Dosh", "Cineverse", "PG-9");
 
         String[] ans = Movie.getPG(m);
-        System.out.println(ans);
+
+        System.out.println(Arrays.toString(ans));
     }
 }
 class Movie{
