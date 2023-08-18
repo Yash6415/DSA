@@ -1,6 +1,4 @@
 package Recusion;
-
-import java.util.Arrays;
 //08-05-2023
 //5. Print the array elements using recursion.
 public class Print_Arrays {

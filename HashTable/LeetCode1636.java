@@ -1,5 +1,4 @@
 package HashTable;
-
 import java.util.*;
 
 public class LeetCode1636 {
@@ -13,8 +12,13 @@ public class LeetCode1636 {
         System.out.println(map);
         int[] ans = new int[arr.length];
         int max = 0;
-        for(Map.Entry<Integer,Integer> me : map.entrySet()){
-            max = Math.min(me.getValue(),max);
+        for (Map.Entry<Integer, Integer> me : map.entrySet()) {
+            max = Math.min(me.getValue(), max);
+        }
+        System.out.println(max);
+
+        for (int i = 0; i < arr.length; i++) {
+            ans[i] = arr[i] - max;
         }
         System.out.println(max);
     }
