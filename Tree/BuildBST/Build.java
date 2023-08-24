@@ -2,7 +2,7 @@ package Tree.BuildBST;
 //28-06-2023
 public class Build {
     public static void main(String[] args) {
-        int arr[] = {5,1,3,4,2,7};
+        int arr[] = {5,1,5,3,4,2,7};
         Node root = null;
 
         for(int i=0; i< arr.length; i++){

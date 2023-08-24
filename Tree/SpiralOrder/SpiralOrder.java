@@ -12,8 +12,6 @@ public class SpiralOrder {
         tree.root.right = new Node(30);
         tree.root.left.left = new Node(40);
         tree.root.left.right = new Node(50);
-        tree.root.right.left = new Node(60);
-        tree.root.right.right = new Node(70);
 
         tree.Spiral();
     }
@@ -21,7 +19,40 @@ public class SpiralOrder {
 class BTree{
     Node root;
     public void Spiral(){
-        Deque<Integer> deque = new LinkedList<>();
+        Boolean flag = false;
+        Deque<Node> deque = new LinkedList<>();
+        deque.add(root);
+        while (!deque.isEmpty()) {
+            if (flag) {
+                int size = deque.size();
+                while (size > 0) {
+                    Node node = deque.removeLast();
+                    System.out.print(node.data + " ");
+                    if(node.right != null){
+                        deque.addFirst(node.right);
+                    }
+                    if(node.left != null){
+                        deque.addFirst(node.left);
+                    }
+                    size--;
+                }
+                flag = !flag;
+            }else {
+                int size = deque.size();
+                while (size > 0){
+                    Node node = deque.removeFirst();
+                    System.out.print(node.data + " ");
+                    if(node.left != null){
+                        deque.addLast(node.left);
+                    }
+                    if(node.right != null){
+                        deque.addLast(node.right);
+                    }
+                    size--;
+                }
+                flag = !flag;
+            }
+        }
     }
 }
 class Node {
