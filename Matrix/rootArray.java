@@ -1,4 +1,4 @@
-package String;
+package Matrix;
 
 public class rootArray {
     public static void main(String[] args){

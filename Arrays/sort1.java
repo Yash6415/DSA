@@ -5,8 +5,8 @@ public class sort1 {
         int arr[] = {3,1,5,10,8,6};
         int n = arr.length;
 
-        for(int i=1; i<n ;i++){
-            for(int j=0; j<n-i ; j++){
+        for(int i=1; i<n;i++){
+            for(int j=0; j<n-i; j++){
                 if(arr[j] > arr[j+1]){
                     int temp = arr[j];
                     arr[j] = arr[j+1];

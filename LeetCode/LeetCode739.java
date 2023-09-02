@@ -1,4 +1,4 @@
-package Arrays;
+package LeetCode;
 //24-07-2023
 //739.Daily Temperatures.
 public class LeetCode739 {

@@ -34,18 +34,15 @@ public class insert_arr{
         arr[i] = j;
         i++;
         return i;
-
     }
-    public static void update(int[] arr,int n1,int n2,int j)
-    {
+    public static void update(int[] arr,int n1,int n2,int j) {
         for (int i=0; i<j; i++) {
             if (arr[i] == n1) {
                 arr[i] = n2;
             }
         }
     }
-    public static void search(int[] arr,int n1,int j)
-    {
+    public static void search(int[] arr,int n1,int j) {
         for (int i=0; i<j; i++) {
             if (arr[i] == n1) {
                 System.out.println(n1+" Is present");
@@ -54,8 +51,7 @@ public class insert_arr{
         }
         System.out.println(n1 + " Is not present");
     }
-    public static int delete(int[] arr,int n1,int n)
-    {
+    public static int delete(int[] arr,int n1,int n) {
         for (int i=0; i<n; i++) {
             if (arr[i] == n1) {
                 n--;
