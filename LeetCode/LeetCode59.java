@@ -1,4 +1,4 @@
-package Matrix;
+package LeetCode;
 //02-08-2023
 //59.Spiral Matrix II
 public class LeetCode59 {

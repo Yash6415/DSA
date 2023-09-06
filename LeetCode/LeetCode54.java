@@ -1,4 +1,4 @@
-package Matrix;
+package LeetCode;
 import java.util.*;
 //02-08-2023
 //54.Spiral Matrix.

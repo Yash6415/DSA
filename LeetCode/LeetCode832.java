@@ -1,4 +1,4 @@
-package Matrix;
+package LeetCode;
 //27-07-2023
 //832.Flipping an Image.
 public class LeetCode832 {
