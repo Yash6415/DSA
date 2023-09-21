@@ -1,49 +1,35 @@
 package HashTable;
-
-import java.util.*;
+//21-09-2023
+//1160.Find Words That Can Be Formed by Characters.
 public class LeetCode1160 {
     public static void main(String[] args) {
-        String[] s1 = {"dyiclysmffuhibgfvapygkorkqllqlvokosagyelotobicwcmebnpznjbirzrzsrtzjxhsfpiwyfhzyonmuabtlwin","ndqeyhhcquplmznwslewjzuyfgklssvkqxmqjpwhrshycmvrb","ulrrbpspyudncdlbkxkrqpivfftrggemkpyjl","boygirdlggnh","xmqohbyqwagkjzpyawsydmdaattthmuvjbzwpyopyafphx","nulvimegcsiwvhwuiyednoxpugfeimnnyeoczuzxgxbqjvegcxeqnjbwnbvowastqhojepisusvsidhqmszbrnynkyop","hiefuovybkpgzygprmndrkyspoiyapdwkxebgsmodhzpx","juldqdzeskpffaoqcyyxiqqowsalqumddcufhouhrskozhlmobiwzxnhdkidr","lnnvsdcrvzfmrvurucrzlfyigcycffpiuoo","oxgaskztzroxuntiwlfyufddl","tfspedteabxatkaypitjfkhkkigdwdkctqbczcugripkgcyfezpuklfqfcsccboarbfbjfrkxp","qnagrpfzlyrouolqquytwnwnsqnmuzphne","eeilfdaookieawrrbvtnqfzcricvhpiv","sisvsjzyrbdsjcwwygdnxcjhzhsxhpceqz","yhouqhjevqxtecomahbwoptzlkyvjexhzcbccusbjjdgcfzlkoqwiwue","hwxxighzvceaplsycajkhynkhzkwkouszwaiuzqcleyflqrxgjsvlegvupzqijbornbfwpefhxekgpuvgiyeudhncv","cpwcjwgbcquirnsazumgjjcltitmeyfaudbnbqhflvecjsupjmgwfbjo","teyygdmmyadppuopvqdodaczob","qaeowuwqsqffvibrtxnjnzvzuuonrkwpysyxvkijemmpdmtnqxwekbpfzs","qqxpxpmemkldghbmbyxpkwgkaykaerhmwwjonrhcsubchs"};
-        String chars = "usdruypficfbpfbivlrhutcgvyjenlxzeovdyjtgvvfdjzcmikjraspdfp";
-        //Map<String,Integer> map = new HashMap<>();
-        HashSet<Character> set = new HashSet<>();
-
-        for(char c : chars.toCharArray()){
-            set.add(c);
+        String[] words = {"cat","bt","hat","tree"};
+        String chars = "atach";
+        if(words.length == 0) {
+            System.out.println(0);
+            return;
         }
-        System.out.println(set);
-        int ans = 0;
-        for(int i=0; i<s1.length; i++){
-            String s = s1[i];
-            int count = 0;
-            for(int j=0; j<s.length(); j++){
-                if(set.contains(s.charAt(j))){
-                    count++;
+        int count = 0;
+        int[] ans = new int[26];
+
+        for(char c : chars.toCharArray()) {
+            ans[c - 'a']++;
+        }
+
+        for(String word : words) {
+            int[] arr = ans.clone();
+            boolean flag = true;
+            for (char c : word.toCharArray()){
+                arr[c - 'a']--;
+                if (arr[c - 'a'] < 0){
+                    flag = false;
+                    break;
                 }
             }
-            if(s.length() == count){
-                ans += count;
+            if (flag) {
+                count += word.length();
             }
         }
-        System.out.println(ans);
-
-
-//        for(String s : s1){
-//            if(map.containsKey(s)){
-//                map.put(s,map.get(s) + 1);
-//            }else{
-//                map.put(s,1);
-//            }
-//        }
-        //System.out.println(map);
-
-//        for(Map.Entry<String,Integer> me : map.entrySet()){
-//            String s = me.getKey();
-//            for(int i=0; i<s.length(); i++){
-//                if(set.contains(s.charAt(i))){
-//                    count++;
-//                }
-//            }
-//        }
+        System.out.println(count);
     }
 }
