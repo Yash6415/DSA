@@ -12,7 +12,7 @@ public class Balanced_parentheses {
             if(s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '['){
                 stack.push(s.charAt(i));
             }else{
-                if(stack.isEmpty()){
+                if(stack.isEmpty()) {
                     System.out.println(false);
                     return;
                 }
