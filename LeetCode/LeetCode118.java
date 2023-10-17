@@ -7,9 +7,9 @@ public class LeetCode118 {
         int n = 5;
         List<List<Integer>> list = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
+        for (int i=0; i<n; i++) {
             List<Integer> row = new ArrayList<>();
-            for (int j = 0; j <= i; j++) {
+            for (int j=0; j<=i; j++) {
                 if (j == 0 || j == i) {
                     row.add(1);
                 } else {
