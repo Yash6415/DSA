@@ -1,7 +1,7 @@
 package LeetCode;
 //22-10-2023
 //2908.Minimum Sum of Mountain Triplets I.
-public class LeerCode2908 {
+public class LeetCode2908 {
     public static void main(String[] args) {
         int[] arr = {8,6,1,5,3};
         int min = Integer.MAX_VALUE;
