@@ -7,7 +7,7 @@ public class DuplicateNumber {
         int sum = 0;
         int m = n*(n+1)/2;
 
-        for(int i=0;i<=n;i++){
+        for(int i=0; i<=n; i++){
             sum += arr[i];
         }
         System.out.println(sum-m);

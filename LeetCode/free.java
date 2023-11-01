@@ -3,20 +3,6 @@ import java.util.*;
 
 public class free {
     public static void main(String[] args) {
-        int[] deck = {17,13,11,2,3,5,7};
-        int N = deck.length;
-        Deque<Integer> index = new LinkedList();
-        for (int i = 0; i < N; ++i)
-            index.add(i);
 
-        int[] ans = new int[N];
-        Arrays.sort(deck);
-        for (int card: deck) {
-            ans[index.pollFirst()] = card;
-            if (!index.isEmpty())
-                index.add(index.pollFirst());
-        }
-
-        System.out.println(Arrays.toString(ans));
     }
 }
