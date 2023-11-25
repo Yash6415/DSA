@@ -1,9 +1,9 @@
 package Arrays;
-//17.Insert / update / search / print /x delete.
+//17.Insert / update / search / print / delete.
 public class insert_arr{
     public static void main(String[] args) {
         int[] arr=new int[5];
-        int i= 0;
+        int i = 0;
 
         i = insert(arr,10,i);
         i = insert(arr,20,i);

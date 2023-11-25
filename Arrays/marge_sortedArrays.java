@@ -1,6 +1,6 @@
 package Arrays;
-
-public class sort4 {
+//Merge two sorted array
+public class marge_sortedArrays {
     public static void main(String[] args){
         int arr1[] = {2,3,5,7,9,11,12};
         int arr2[] = {1,4,5,6,8,10};

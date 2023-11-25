@@ -40,7 +40,7 @@ public class insert_update_in_sorted_arr {
         }
     }
     public static void display(int[] arr,int j) {
-        for(int i=0; i< arr.length; i++) {
+        for(int i=0; i<arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
     }

@@ -1,6 +1,6 @@
 package Arrays;
 //second max.
-public class max {
+public class Second_max {
     public static void main(String[] arg) {
         int arr[] = {10, 2, 3, 9, 20, 5, 1};
         int mx1 = arr[1];
