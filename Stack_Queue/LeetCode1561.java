@@ -2,7 +2,7 @@ package Stack_Queue;
 import java.util.*;
 //25-11-2023
 //1561.Maximum Number of Coins You Can Get.
-public class LeetCode1561 {     
+public class LeetCode1561 {
     public static void main(String[] args) {
         int[] piles = {2, 4, 1, 2, 7, 8};
 
