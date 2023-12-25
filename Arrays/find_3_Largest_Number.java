@@ -2,7 +2,7 @@ package Arrays;
 //Find 3rd largest element from array.
 public class find_3_Largest_Number {
     public static void main(String[] args) {
-        int arr[] = {10, 2, 3, 9, 20, 5, 1};
+        int arr[] = {8,5,4,9,9,8,3};
         int mx1 = arr[0];
         int mx2 = Integer.MIN_VALUE;
         int mx3 = Integer.MIN_VALUE;
