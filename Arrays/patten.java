@@ -1,7 +1,4 @@
 package Arrays;
-
-import java.sql.SQLOutput;
-
 public class patten {
     public static void main(String[] args) {
         int n = 5;
