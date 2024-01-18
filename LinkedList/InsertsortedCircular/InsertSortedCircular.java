@@ -1,6 +1,6 @@
 package LinkedList.InsertsortedCircular;
 
-public class InsertsortedCircular {
+public class InsertSortedCircular {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         LinkedList list1 = new LinkedList();
