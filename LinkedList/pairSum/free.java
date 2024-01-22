@@ -1,5 +1,4 @@
-package LinkedList.free;
-import java.util.*;
+package LinkedList.pairSum;
 
 public class  free {
     public static void main(String[] args) {
