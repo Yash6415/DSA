@@ -3,19 +3,15 @@ import java.util.*;
 
 public class free {
     public static void main(String[] args) {
-        String s = "abcd+-*";
-        Stack<String> stack = new Stack<>();
+        String num = "35427";
 
-        for(int i=0; i<s.length(); i++){
-            if(s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '/' || s.charAt(i) == '*'){
-                String left = stack.pop();
-                String right = stack.pop();
-                String ans = '(' + left + s.charAt(i) + right + ')';
-                stack.push(ans);
-            }else {
-                stack.push(String.valueOf(s.charAt(i)));
+        for (int i = num.length() - 1; i >= 0; i--) {
+            if (num.charAt(i) % 2 != 0) {
+                System.out.println(num.substring(0, i + 1));
+                return;
             }
         }
-        System.out.println(stack);
+
+        System.out.println("");
     }
 }

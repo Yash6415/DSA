@@ -10,7 +10,7 @@ public class InsertSortedway {
         list.insert(30);
         list.insert(50);
 
-        list1.head = list.sortedInsert(list.head,20);
+        list1.head = list.sortedInsert(list.head,20);   
         list1.print();
     }
 }
